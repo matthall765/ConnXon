@@ -1,0 +1,31 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Ubuntu|Podkova|Krona+One);
+.fntz
+{
+    font-family: 'Droid Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Podkova', serif;
+    font-family: 'Krona One', sans-serif;
+}
+.page
+{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.authstate
+{
+    display: block;
+    text-align: right;
+    padding: 10px;
+}
+.head
+{
+    text-align: center;
+}
