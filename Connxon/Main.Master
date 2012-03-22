@@ -14,7 +14,7 @@
         <div class="page">
             <div class="head">
                 <div class="title">
-                    <h1 class="newStyle1">Connexon Computers</h1>
+                    <h1>Connexon Computers</h1>
                 </div>
                 <div class="authstate">
                     <asp:LoginView ID="lgnStatus" runat="server">

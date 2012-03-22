@@ -59,7 +59,10 @@
     <Content Include="App_Data\ConnX_log.ldf">
       <DependentUpon>ConnX.mdf</DependentUpon>
     </Content>
-    <Content Include="Index.aspx" />
+    <Content Include="Public\Index.aspx" />
+    <Content Include="Public\Login.aspx" />
+    <Content Include="Registerd\MyAccount.aspx" />
+    <Content Include="Staff\Item edit.aspx" />
     <Content Include="Style.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -75,11 +78,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ConnX.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Index.aspx.cs">
+    <Compile Include="Public\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Index.aspx.designer.cs">
+    <Compile Include="Public\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Main.Master.cs">
@@ -90,11 +93,34 @@
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registerd\MyAccount.aspx.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registerd\MyAccount.aspx.designer.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Item edit.aspx.cs">
+      <DependentUpon>Item edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\Item edit.aspx.designer.cs">
+      <DependentUpon>Item edit.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Main.Master" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Admin\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="App_Code\ConnX.xsc">
       <DependentUpon>ConnX.xsd</DependentUpon>
