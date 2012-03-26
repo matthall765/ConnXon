@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Connexon.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Style.css?version=1" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="page">
+        <div class="head">
+            <div class="title">
+                <h1>Heading</h1>
+            </div>
+            <div class="authstate">
+                <asp:LoginView ID="logHead" runat="server">
+                </asp:LoginView>
+            </div>
+            <div class="nav">
+                <ul id="ddown">
+		            <li><a href="#">Menu1</a>
+			            <ul>
+				            <li><a href="#">Item1</a></li>
+			            	<li><a href="#">Item2</a></li>	
+				            <li><a href="#">Item3</a></li>	
+				            <li><a href="#">Item4</a></li>
+			            </ul>
+		            </li>
+		            <li><a href="#">Menu2</a>
+		              	<ul>
+			            	<li><a href="#">Item1</a></li>
+				            <li><a href="#">Item2</a></li>	
+				            <li><a href="#">Item3</a></li>	
+				            <li><a href="#">Item4</a></li>
+			            </ul>
+		            </li>
+		            <li><a href="#">Menu3</a>
+			            <ul>
+			            	<li><a href="#">Item1</a></li>
+			            	<li><a href="#">Item2</a></li>	
+			            	<li><a href="#">Item3</a></li>	
+			            	<li><a href="#">Item4</a></li>
+		            	</ul>
+		            </li>
+	            </ul>
+            </div>
+        </div>
+        <div class="cont">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

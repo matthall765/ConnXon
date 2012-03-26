@@ -1,4 +1,6 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Ubuntu|Podkova|Krona+One);
+﻿/* -------------------------Main------------------------------ */
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Ubuntu|Podkova|Krona+One);
 
 .fntz
 {
@@ -7,6 +9,11 @@
     font-family: 'Podkova', serif;
     font-family: 'Krona One', sans-serif;
 }
+.center
+{
+    margin-left: 25%;
+    margin-right: 25%;
+}
 .page
 {
     margin-left: 15%;
@@ -14,23 +21,70 @@
 }
 .head
 {
-    background-color: #136821;
+    background-color: #ADBD55;
+    height: auto;
+    width: auto;
     overflow: auto;
 }
 .title
 {
-    float:left;
+    float: left;
     width: auto;
-    font-family: 'Podkova', serif;
-    padding: 10px;
+    height:auto;
+    clear: both;
 }
 .authstate
 {
+    width: auto;
+    float: right;
     text-align: right;
     padding: 10px;
 }
-.center
+.nav
 {
-    margin-left: 25%;
-    margin-right: 25%;
+    height:auto;
+    clear:both;
 }
+
+/*--------------------Dropdown----------------------*/
+
+#ddown, #ddown ul 
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#ddown a 
+{
+	display: block;
+	list-style: none;
+	text-decoration: none;
+	color: black;
+	width: 5em;
+	text-align: center;
+}
+#ddown a:hover
+{
+	font-weight: bold;
+	background-color: #25B1DD;
+}
+#ddown li 
+{
+	border-style: solid;
+	border-width: 1px;
+	background-color: #85DDDC;
+	float: left;
+	width: 5em;
+}
+#ddown li ul
+{
+	position: absolute;
+	width: 5em;
+	left: -999em;
+}
+#ddown li:hover ul
+{
+	left: auto;
+}
+
+

@@ -10,7 +10,7 @@
 namespace Connexon {
     
     
-    public partial class Main {
+    public partial class Site {
         
         /// <summary>
         /// head control.
@@ -31,21 +31,21 @@ namespace Connexon {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// lgnStatus control.
+        /// logHead control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LoginView lgnStatus;
+        protected global::System.Web.UI.WebControls.LoginView logHead;
         
         /// <summary>
-        /// content control.
+        /// ContentPlaceHolder1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder content;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
     }
 }
