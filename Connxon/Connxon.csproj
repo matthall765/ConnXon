@@ -59,7 +59,8 @@
     <Content Include="App_Data\ConnX_log.ldf">
       <DependentUpon>ConnX.mdf</DependentUpon>
     </Content>
-    <Content Include="Default.aspx" />
+    <Content Include="images\category\K20.png" />
+    <Content Include="Public\Default.aspx" />
     <Content Include="Style.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -75,11 +76,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ConnX.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
+    <Compile Include="Public\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
+    <Compile Include="Public\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,7 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\" />
-    <Folder Include="Public\" />
+    <Folder Include="images\products\" />
     <Folder Include="Registerd\" />
     <Folder Include="Staff\" />
   </ItemGroup>
