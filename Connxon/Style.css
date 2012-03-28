@@ -8,6 +8,10 @@
     font-family: 'Krona One', sans-serif;
 }
 /*----------------Head-----------------------*/
+body
+{
+    background-color: #AAAAAA;
+}
 .center
 {
     margin-left: 25%;
@@ -17,16 +21,21 @@
 {
     margin-left: 15%;
     margin-right: 15%;
+    background-color: #DDDDDD;
+    box-shadow: 10px 10px 10px #888888;
+    border-radius: 15px;
 }
 .head
 {
-    background-color: #ADBD55;
+    background-color: #156985;
     height: auto;
     width: auto;
     overflow: auto;
+    border-radius: 5px;
 }
 .title
 {
+    color: #DCDCDC;
     float: left;
     width: auto;
     height:auto;
@@ -63,22 +72,25 @@
 	display: block;
 	list-style: none;
 	text-decoration: none;
-	color: black;
+	color: green;
 	width: 5em;
+	text-shadow: 1px 1px 1px #DDDDDD;
 	text-align: center;
 }
 #ddown a:hover
 {
 	font-weight: bold;
 	background-color: #25B1DD;
+	border-radius: 10px;
 }
 #ddown li 
 {
 	border-style: solid;
 	border-width: 1px;
-	background-color: #85DDDC;
+	background-color: Lime;
 	float: left;
 	width: 5em;
+	border-radius: 5px;
 }
 #ddown li ul
 {
@@ -91,3 +103,24 @@
 	left: auto;
 }
 /*---------------Content----------------*/
+
+.category
+{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: auto;
+}
+.itembox
+{
+    background-color: #CCCCCC;
+}
+.img
+{
+    border-radius: 5px;
+}
+.itemtext
+{
+    margin-left: 35%;
+    margin-right: 25%;
+    width:auto;
+}
