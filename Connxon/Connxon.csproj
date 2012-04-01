@@ -59,7 +59,16 @@
     <Content Include="App_Data\ConnX_log.ldf">
       <DependentUpon>ConnX.mdf</DependentUpon>
     </Content>
+    <Content Include="images\category\Case.jpg" />
+    <Content Include="images\category\CPU.jpg" />
+    <Content Include="images\category\HDD.jpg" />
     <Content Include="images\category\K20.png" />
+    <Content Include="images\category\Keyboard.jpg" />
+    <Content Include="images\category\mice.jpg" />
+    <Content Include="images\category\Monitor.jpg" />
+    <Content Include="images\category\Motherboard.jpg" />
+    <Content Include="images\category\RAM.jpg" />
+    <Content Include="images\category\SSD.jpg" />
     <Content Include="images\products\Big\Case\10AT3002.jpg" />
     <Content Include="images\products\Big\Case\1ZMZ9.jpg" />
     <Content Include="images\products\Big\Case\2ATMP180.jpg" />
@@ -214,9 +223,15 @@
     <Content Include="images\products\Small\SSD\3Intel 520.jpg" />
     <Content Include="images\products\Small\SSD\4OCZ Pet.jpg" />
     <Content Include="images\products\Small\SSD\5Muschr.jpg" />
+    <Content Include="Public\Cart.aspx" />
     <Content Include="Public\Default.aspx" />
     <Content Include="Public\Login.aspx" />
     <Content Include="Public\Products.aspx" />
+    <Content Include="Public\Register.aspx" />
+    <Content Include="Registerd\Billing.aspx" />
+    <Content Include="Registerd\Order.aspx" />
+    <Content Include="Registerd\Shipping.aspx" />
+    <Content Include="Staff\ManageOrders.aspx" />
     <Content Include="Style.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -227,6 +242,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Public\Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Public\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -249,6 +271,34 @@
     <Compile Include="Public\Products.aspx.designer.cs">
       <DependentUpon>Products.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Public\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registerd\Billing.aspx.cs">
+      <DependentUpon>Billing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registerd\Billing.aspx.designer.cs">
+      <DependentUpon>Billing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registerd\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registerd\Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registerd\Shipping.aspx.cs">
+      <DependentUpon>Shipping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registerd\Shipping.aspx.designer.cs">
+      <DependentUpon>Shipping.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -256,12 +306,16 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Staff\ManageOrders.aspx.cs">
+      <DependentUpon>ManageOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff\ManageOrders.aspx.designer.cs">
+      <DependentUpon>ManageOrders.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Admin\" />
     <Folder Include="App_Code\" />
-    <Folder Include="Registerd\" />
-    <Folder Include="Staff\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Site.Master" />

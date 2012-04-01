@@ -18,6 +18,12 @@
             </div>
             <div class="authstate">
                 <asp:LoginView ID="logHead" runat="server">
+                    <AnonymousTemplate>
+                        [ <a href="~/Login.aspx" ID="logHead" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                         [ <asp:LoginStatus ID="logHead" runat="server" LogoutAction="Redirect" LogoutText="Log Out" /> ]
+                    </LoggedInTemplate>
                 </asp:LoginView>
             </div>
             <div class="nav">
