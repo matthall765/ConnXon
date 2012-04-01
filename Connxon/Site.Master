@@ -14,7 +14,7 @@
     <div class="page">
         <div class="head">
             <div class="title">
-                <h1>Heading</h1>
+                <h1>Connxon Computers</h1>
             </div>
             <div class="authstate">
                 <asp:LoginView ID="logHead" runat="server">
@@ -22,30 +22,29 @@
             </div>
             <div class="nav">
                 <ul id="ddown">
-		            <li><a href="#">Menu1</a>
-			            <ul>
-				            <li><a href="#">Item1</a></li>
-			            	<li><a href="#">Item2</a></li>	
-				            <li><a href="#">Item3</a></li>	
-				            <li><a href="#">Item4</a></li>
-			            </ul>
-		            </li>
-		            <li><a href="#">Menu2</a>
+		            <li><a href="#">Home</a></li>
+		            <li><a href="#">Products</a>
 		              	<ul>
-			            	<li><a href="#">Item1</a></li>
-				            <li><a href="#">Item2</a></li>	
-				            <li><a href="#">Item3</a></li>	
-				            <li><a href="#">Item4</a></li>
+			            	<li><a href="#">HDD</a></li>
+				            <li><a href="#">SSD</a></li>	
+				            <li><a href="#">CPU</a></li>	
+				            <li><a href="#">Keyboards</a></li>
+                            <li><a href="#">Mice</a></li>
+                            <li><a href="#">Monitors</a></li>
+                            <li><a href="#">Processors</a></li>
+                            <li><a href="#">Motherboards</a></li>
+                            <li><a href="#">Ram</a></li>
+                            <li><a href="#">Cases</a></li>
 			            </ul>
 		            </li>
-		            <li><a href="#">Menu3</a>
-			            <ul>
-			            	<li><a href="#">Item1</a></li>
-			            	<li><a href="#">Item2</a></li>	
-			            	<li><a href="#">Item3</a></li>	
-			            	<li><a href="#">Item4</a></li>
-		            	</ul>
-		            </li>
+		            <li><a href="#">Cart</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">About us</a>
+                        <ul>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </li>
+
 	            </ul>
             </div>
         </div>

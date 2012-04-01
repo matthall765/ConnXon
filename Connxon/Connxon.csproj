@@ -147,6 +147,8 @@
     <Content Include="images\products\Small\Motherboard\8GBGA990XA.jpg" />
     <Content Include="images\products\Small\Motherboard\9ASP8P67.jpg" />
     <Content Include="Public\Default.aspx" />
+    <Content Include="Public\Login.aspx" />
+    <Content Include="Public\Products.aspx" />
     <Content Include="Style.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -157,11 +159,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Code\ConnX.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ConnX.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Public\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -170,6 +167,20 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -180,21 +191,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\" />
+    <Folder Include="App_Code\" />
     <Folder Include="Registerd\" />
     <Folder Include="Staff\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App_Code\ConnX.xsc">
-      <DependentUpon>ConnX.xsd</DependentUpon>
-    </None>
-    <None Include="App_Code\ConnX.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ConnX.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="App_Code\ConnX.xss">
-      <DependentUpon>ConnX.xsd</DependentUpon>
-    </None>
     <Content Include="Site.Master" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
