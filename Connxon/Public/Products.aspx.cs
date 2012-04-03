@@ -13,5 +13,11 @@ namespace Connexon.Public
         {
 
         }
+        protected void gridProducts_SelectedIndexChanged(Object sender, EventArgs e)
+        {
+            int index = gridProducts.SelectedIndex;
+            Session["SelectedProduct"] = (gridProducts.DataKeys[index].Value.ToString());
+            Response.Redirect("Product.aspx");
+        }
     }
 }
