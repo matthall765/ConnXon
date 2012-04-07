@@ -19,10 +19,12 @@
             <div class="authstate">
                 <asp:LoginView ID="logHead" runat="server">
                     <AnonymousTemplate>
-                        [ <a href="~/Login.aspx" ID="logHead" runat="server">Log In</a> ]
+                        [ <a href="~/Public/Login.aspx" ID="logHead" runat="server">Log In</a> ]
                     </AnonymousTemplate>
                     <LoggedInTemplate>
-                         [ <asp:LoginStatus ID="logHead" runat="server" LogoutAction="Redirect" LogoutText="Log Out" /> ]
+                         [ Hello <asp:LoginName ID="LoginName1" runat="server" />
+                        <asp:Button ID="cmdLogout" runat="server" Text="Logout" 
+                             onclick="cmdLogout_Click" /> ]
                     </LoggedInTemplate>
                 </asp:LoginView>
             </div>

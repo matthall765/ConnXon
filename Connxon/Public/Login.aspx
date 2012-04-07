@@ -3,7 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="loginbox">
-        <asp:Login ID="Login1" CssClass="login" runat="server">
+        <asp:Login ID="lgLogin" CssClass="login" runat="server">
         </asp:Login>
+        <br />
+        <asp:ValidationSummary ID="valLogin" runat="server" ValidationGroup="lgLogin" />
     </div>
 </asp:Content>

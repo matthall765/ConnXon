@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Security;
 
 namespace Connexon
 {
@@ -12,6 +13,14 @@ namespace Connexon
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void cmdLogout_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Session.Contents.RemoveAll();
+            FormsAuthentication.SignOut();
+            Response.Redirect("~/Public/Index.aspx");
         }
     }
 }
