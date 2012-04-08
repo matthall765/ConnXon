@@ -10,12 +10,13 @@
             <ItemTemplate>
                 <asp:Label ID="CategoryLabel" runat="server" Text='<%# Eval("Category") %>' />
                 <br />
-                <asp:ImageButton ID="imgPic" runat="server" CommandName="Select" ToolTip='<%# Eval("ToolTip") %>'  ImageUrl='<%# Eval("Image") %>' />
+                <asp:ImageButton runat="server" CommandName="Select" ImageUrl='<%# Eval("Image") %>'/>
                 <br />
 <br />
             </ItemTemplate>
         </asp:DataList>
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
         <asp:ObjectDataSource ID="CategoryData" runat="server" DeleteMethod="Delete" 
             InsertMethod="Insert" OldValuesParameterFormatString="original_{0}" 
             SelectMethod="GetData" TypeName="ConnXTableAdapters.CategoriesTableAdapter" 

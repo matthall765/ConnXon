@@ -30,26 +30,26 @@
             </div>
             <div class="nav">
                 <ul id="ddown">
-		            <li><a href="#">Home</a></li>
-		            <li><a href="#">Products</a>
+		            <li><asp:Hyperlink runat="server" NavigateUrl="#">Home</asp:Hyperlink></li>
+		            <li><asp:Hyperlink runat="server" NavigateUrl="#">Products</asp:Hyperlink>
 		              	<ul>
-			            	<li><a href="#">HDD</a></li>
-				            <li><a href="#">SSD</a></li>	
-				            <li><a href="#">CPU</a></li>	
-				            <li><a href="#">Keyboards</a></li>
-                            <li><a href="#">Mice</a></li>
-                            <li><a href="#">Monitors</a></li>
-                            <li><a href="#">Processors</a></li>
-                            <li><a href="#">Motherboards</a></li>
-                            <li><a href="#">Ram</a></li>
-                            <li><a href="#">Cases</a></li>
+			            	<li><asp:Hyperlink runat="server" NavigateUrl="~/Public/Products.aspx?Cat=HDD">HDD</asp:Hyperlink></li>
+				            <li><asp:Hyperlink runat="server" NavigateUrl="#">SSD</asp:Hyperlink></li>	
+				            <li><asp:Hyperlink runat="server" NavigateUrl="#">CPU</asp:Hyperlink></li>	
+				            <li><asp:Hyperlink runat="server" NavigateUrl="#">Keyboards</asp:Hyperlink></li>
+                            <li><asp:Hyperlink runat="server" NavigateUrl="#">Mice</asp:Hyperlink></li>
+                            <li><asp:Hyperlink runat="server" NavigateUrl="#">Monitors</asp:Hyperlink></li>
+                            <li><asp:Hyperlink runat="server" NavigateUrl="#">Processors</asp:Hyperlink></li>
+                            <li><asp:Hyperlink runat="server" NavigateUrl="~/Public/Products.aspx?Cat=Motherboards">Motherboards</asp:Hyperlink></li>
+                            <li><asp:Hyperlink runat="server" NavigateUrl="#">Ram</asp:Hyperlink></li>
+                            <li><asp:Hyperlink runat="server" NavigateUrl="#">Cases</asp:Hyperlink></li>
 			            </ul>
 		            </li>
-		            <li><a href="#">Cart</a></li>
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">About us</a>
+		            <li><asp:Hyperlink runat="server" NavigateUrl="#">Cart</asp:Hyperlink></li>
+                    <li><asp:Hyperlink runat="server" NavigateUrl="#">My Account</asp:Hyperlink></li>
+                    <li><asp:Hyperlink runat="server" NavigateUrl="#">About us</asp:Hyperlink>
                         <ul>
-                            <li><a href="#">Contact us</a></li>
+                            <li><asp:Hyperlink runat="server" NavigateUrl="#">Contact us</asp:Hyperlink></li>
                         </ul>
                     </li>
 

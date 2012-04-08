@@ -11,7 +11,7 @@ namespace Connexon
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void dlsCategory_SelectedIndexChange(object sender, EventArgs e)
@@ -19,6 +19,7 @@ namespace Connexon
             String sel = dlsCategory.DataKeys[dlsCategory.SelectedIndex].ToString();
             Session["SelectedCategory"] = sel;
             Label1.Text = sel;
+            Response.Redirect("~/Public/Products.aspx");
         }
     }
 }

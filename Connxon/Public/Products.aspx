@@ -3,29 +3,29 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+        <asp:GridView ID="grdProducts" runat="server" AutoGenerateColumns="False" 
             DataKeyNames="ProductID" DataSourceID="ObjectDataSource1">
             <Columns>
-                <asp:BoundField DataField="ProductID" HeaderText="ProductID" 
-                    InsertVisible="False" ReadOnly="True" SortExpression="ProductID" />
-                <asp:BoundField DataField="Category" HeaderText="Category" 
-                    SortExpression="Category" />
-                <asp:BoundField DataField="Image_Small" HeaderText="Image_Small" 
-                    SortExpression="Image_Small" />
-                <asp:BoundField DataField="Image_Large" HeaderText="Image_Large" 
-                    SortExpression="Image_Large" />
+                <asp:ImageField DataImageUrlField="Image_Small">
+                </asp:ImageField>
                 <asp:BoundField DataField="Brand" HeaderText="Brand" SortExpression="Brand" />
                 <asp:BoundField DataField="Series" HeaderText="Series" 
                     SortExpression="Series" />
                 <asp:BoundField DataField="Model" HeaderText="Model" SortExpression="Model" />
                 <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
-                <asp:BoundField DataField="Description" HeaderText="Description" 
-                    SortExpression="Description" />
             </Columns>
-
         </asp:GridView>
         <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" 
-            OldValuesParameterFormatString="original_{0}" SelectMethod="GetProducts" 
-            TypeName="ConnXTableAdapters.ProductsTableAdapter"></asp:ObjectDataSource>
+            OldValuesParameterFormatString="original_{0}" 
+            SelectMethod="GetProductsDataCategory" 
+            TypeName="ConnXTableAdapters.ProductsTableAdapter">
+            <SelectParameters>
+                <asp:SessionParameter DefaultValue="*" Name="ClickedItem" 
+                    SessionField="SelectedCategory" Type="String" />
+                <asp:QueryStringParameter DefaultValue="*" Name="HtmlClick" 
+                    QueryStringField="Cat" Type="String" />
+            </SelectParameters>
+        </asp:ObjectDataSource>
     </div>
+        <asp:Label ID="Label1" runat="server" Text="Label" BackColor="Aqua"></asp:Label>
 </asp:Content>

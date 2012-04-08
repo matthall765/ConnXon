@@ -11,8 +11,16 @@ namespace Connexon.Public
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Request.QueryString["Cat"] != null)
+            {
+                Session["SelectedCategory"] = Request.QueryString["Cat"];
+            }
         }
+        protected void Page_UnLoad(object sender, EventArgs e)
+        {
+            Session["SelectedCategory"] = null;
+        }
+
 
     }
 }
