@@ -4,10 +4,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
         <asp:GridView ID="grdProducts" runat="server" AutoGenerateColumns="False" 
-            DataKeyNames="ProductID" DataSourceID="ObjectDataSource1">
+            DataKeyNames="ProductID" DataSourceID="ObjectDataSource1" OnSelectedIndexChanging="grdProducts_IndexChange">
             <Columns>
-                <asp:ImageField DataImageUrlField="Image_Small">
-                </asp:ImageField>
+                <asp:TemplateField>
+                    <ItemTemplate>
+                        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl='<%# Eval("Image_Small") %>' CommandName="Select" />
+                    </ItemTemplate>
+                </asp:TemplateField>
                 <asp:BoundField DataField="Brand" HeaderText="Brand" SortExpression="Brand" />
                 <asp:BoundField DataField="Series" HeaderText="Series" 
                     SortExpression="Series" />

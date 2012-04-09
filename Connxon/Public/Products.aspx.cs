@@ -16,11 +16,17 @@ namespace Connexon.Public
                 Session["SelectedCategory"] = Request.QueryString["Cat"];
             }
         }
+
+        protected void grdProducts_IndexChange(object sender, GridViewSelectEventArgs e)
+        {
+            string prodID = grdProducts.DataKeys[e.NewSelectedIndex].Value.ToString();
+            Session["ProdID"] = int.Parse(prodID);
+            Response.Redirect("Product.aspx");
+        }
+
         protected void Page_UnLoad(object sender, EventArgs e)
         {
             Session["SelectedCategory"] = null;
         }
-
-
     }
 }

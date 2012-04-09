@@ -5,7 +5,7 @@
     <div>
         
         <asp:DataList ID="dlsCategory" runat="server"  DataSourceID="CategoryData" 
-            RepeatColumns="5" RepeatDirection="Vertical" 
+            RepeatColumns="4" RepeatDirection="Vertical" 
              DataKeyField="Category" OnSelectedIndexChanged="dlsCategory_SelectedIndexChange">
             <ItemTemplate>
                 <asp:Label ID="CategoryLabel" runat="server" Text='<%# Eval("Category") %>' />
