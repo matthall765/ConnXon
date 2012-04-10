@@ -33,7 +33,7 @@
 		            <li><asp:Hyperlink runat="server" NavigateUrl="#">Home</asp:Hyperlink></li>
 		            <li><asp:Hyperlink runat="server" NavigateUrl="#">Products</asp:Hyperlink>
 		              	<ul>
-			            	<li><asp:Hyperlink runat="server" NavigateUrl="~/Public/Products.aspx?Cat=HDD">HDD</asp:Hyperlink></li>
+			            	<li><asp:Hyperlink runat="server" NavigateUrl="~/Public/Products.aspx?Cat=Hard%20Drives">HDD</asp:Hyperlink></li>
 				            <li><asp:Hyperlink runat="server" NavigateUrl="#">SSD</asp:Hyperlink></li>	
 				            <li><asp:Hyperlink runat="server" NavigateUrl="#">CPU</asp:Hyperlink></li>	
 				            <li><asp:Hyperlink runat="server" NavigateUrl="#">Keyboards</asp:Hyperlink></li>
@@ -46,7 +46,6 @@
 			            </ul>
 		            </li>
 		            <li><asp:Hyperlink runat="server" NavigateUrl="#">Cart</asp:Hyperlink></li>
-                    <li><asp:Hyperlink runat="server" NavigateUrl="#">My Account</asp:Hyperlink></li>
                     <li><asp:Hyperlink runat="server" NavigateUrl="#">About us</asp:Hyperlink>
                         <ul>
                             <li><asp:Hyperlink runat="server" NavigateUrl="#">Contact us</asp:Hyperlink></li>

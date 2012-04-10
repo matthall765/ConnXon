@@ -4,10 +4,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
-            DataKeyNames="ProductID" DataSourceID="ObjectDataSource1">
+            DataKeyNames="ProductID" DataSourceID="ObjectDataSource1" OnSelectedIndexChanging="GridView1_IndexChange">
             <Columns>
-                <asp:BoundField DataField="Image_Large" HeaderText="Image_Large" 
-                    SortExpression="Image_Large" />
+                <asp:ImageField>
+                </asp:ImageField>
                 <asp:BoundField DataField="Brand" HeaderText="Brand" SortExpression="Brand" />
                 <asp:BoundField DataField="Series" HeaderText="Series" 
                     SortExpression="Series" />
@@ -15,6 +15,11 @@
                 <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
                 <asp:BoundField DataField="Description" HeaderText="Description" 
                     SortExpression="Description" />
+                <asp:TemplateField>
+                   <ItemTemplate>
+                       <asp:Button ID ="cmdAddToCart" runat="server" Text="Add To Cart" CommandName="Select" />
+                       </ItemTemplate>
+                  </asp:TemplateField>
             </Columns>
         </asp:GridView>
         <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" 

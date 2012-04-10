@@ -15,5 +15,13 @@ namespace Connexon.Public
         {
             
         }
+
+        protected void GridView1_IndexChange(object sender, GridViewSelectEventArgs e)
+        {
+            string _prodID = GridView1.DataKeys[e.NewSelectedIndex].Value.ToString();
+            int prodID = int.Parse(_prodID);
+            CartList.getCart().set(prodID);
+            Response.Redirect("Cart.aspx");
+        }
     }
 }
